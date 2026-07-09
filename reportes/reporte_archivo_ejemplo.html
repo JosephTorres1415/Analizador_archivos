@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reporte de Análisis - archivo_ejemplo.txt</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+  }
+  .contenedor {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .encabezado {
+    text-align: center;
+    color: #f8fafc;
+    margin-bottom: 28px;
+  }
+  .encabezado h1 {
+    font-size: 26px;
+    margin: 0 0 6px 0;
+  }
+  .encabezado p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 0;
+  }
+  .tarjeta {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+  .tarjeta h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #64748b;
+    margin: 0 0 14px 0;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 10px;
+  }
+  .fila-dato {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 14px;
+    border-bottom: 1px dashed #e2e8f0;
+  }
+  .fila-dato:last-child { border-bottom: none; }
+  .fila-dato span:first-child { color: #64748b; }
+  .fila-dato span:last-child { font-weight: 600; text-align: right; }
+  .hash {
+    font-family: 'Courier New', monospace;
+    font-size: 12.5px;
+    background: #f1f5f9;
+    padding: 10px 12px;
+    border-radius: 8px;
+    word-break: break-all;
+    margin-top: 8px;
+  }
+  .riesgo {
+    background: #ffebee;
+    border-radius: 14px;
+    padding: 22px 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid #c6282833;
+  }
+  .riesgo .nivel {
+    font-size: 30px;
+    font-weight: 800;
+    color: #c62828;
+    letter-spacing: 0.04em;
+  }
+  .riesgo .descripcion {
+    color: #475569;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .lista-hallazgos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .lista-hallazgos li code {
+    background: #fef2f2;
+    color: #b91c1c;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    display: inline-block;
+  }
+  .vacio {
+    color: #94a3b8;
+    font-size: 13.5px;
+    font-style: italic;
+    margin: 0;
+  }
+  .pie {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 24px;
+  }
+</style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="encabezado">
+      <h1>🔍 Reporte de Análisis de Archivo</h1>
+      <p>Generado el 2026-07-08 22:29:32</p>
+    </div>
+
+    <div class="riesgo">
+      <div class="nivel">🚨 RIESGO ALTO</div>
+      <div class="descripcion">se detectaron múltiples indicios sospechosos</div>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Información del Archivo</h2>
+      <div class="fila-dato"><span>Nombre</span><span>archivo_ejemplo.txt</span></div>
+      <div class="fila-dato"><span>Extensión</span><span>.txt</span></div>
+      <div class="fila-dato"><span>Tamaño</span><span>510 B</span></div>
+      <div class="fila-dato"><span>Última modificación</span><span>2026-07-08 22:23:16</span></div>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Hash SHA-256 (huella digital del archivo)</h2>
+      <div class="hash">da3fbb885c513f3dff241e214e2630f87fed44df23773ab62b02cf86fc3e6cc3</div>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Palabras clave sospechosas</h2>
+      <ul class="lista-hallazgos"><li><code>cmd.exe</code></li><li><code>powershell</code></li><li><code>-enc</code></li><li><code>certutil</code></li></ul>
+    </div>
+
+    <div class="tarjeta">
+      <h2>URLs encontradas</h2>
+      <ul class="lista-hallazgos"><li><code>http://sitio-de-prueba-ejemplo.com</code></li></ul>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Direcciones IP encontradas</h2>
+      <ul class="lista-hallazgos"><li><code>192.168.1.50</code></li></ul>
+    </div>
+
+    <div class="pie">
+      Proyecto de aprendizaje en Ciberseguridad · Análisis estático básico con Python
+    </div>
+  </div>
+</body>
+</html>

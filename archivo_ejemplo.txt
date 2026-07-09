@@ -1,0 +1,13 @@
+Registro de actividad simulado - archivo de prueba
+
+Este es un archivo de ejemplo pensado unicamente para probar el
+Analizador Basico de Archivos Sospechosos. No contiene ningun
+codigo malicioso real, solo texto que imita patrones que el
+script esta diseñado para detectar.
+
+Comando ejecutado: cmd.exe /c powershell -enc SGVsbG8gTXVuZG8=
+Conexion registrada hacia: http://sitio-de-prueba-ejemplo.com
+Direccion IP asociada: 192.168.1.50
+Herramienta utilizada: certutil -urlcache -f
+
+Fin del archivo de prueba.
