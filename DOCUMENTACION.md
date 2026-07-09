@@ -36,7 +36,7 @@ Es importante ser honesto sobre esto: este proyecto **no es un antivirus** ni re
 ```
 analizador-archivos-sospechosos/
 ├── analizador_archivos.py     # el script principal
-├── README.md                  # este archivo
+├── DOCUMENTACION.md                  # este archivo
 ├── MANUAL_TECNICO.md          # instrucciones de instalación y uso
 └── reportes/                  # aquí se guardan los reportes generados (se crea solo)
 ```
